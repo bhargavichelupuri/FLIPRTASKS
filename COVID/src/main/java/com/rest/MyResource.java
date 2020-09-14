@@ -31,7 +31,6 @@ public class MyResource {
 		List<Patients> patientsList = HibernateTemplate.viewAllPatients();	
 		System.out.println("retrieved all patients");
 		return patientsList;	
-
 	}
 	
 	@Path("getStatistics/{ageGroup}/{gender}")
